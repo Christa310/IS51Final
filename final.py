@@ -13,26 +13,39 @@ of grades that are above the average grade.
 """
 
 """
-create list
+Start
 
-capture input
-append number to list
+     Open file "Final.txt" in read mode
 
-capture input
-append number to list
+     Declare list grades
 
-capture input
-append number to list
+     For num in file:
 
-capture input
-append number to list
+         Append num to grades
 
-capture input
-append number to list
+     End loop
 
-sort the list, then splice out the two lowest number
+     total = sum(grades)
 
-print message to user
+     totalNumberOfGrades = len(grades)
+
+     Divide total by totalNumberOfGrades to get avg
+
+     Initialise numberOfGradeAboveAvg to 0
+
+     For num in grades:
+
+          If num > avg
+
+              Increase numberOfGradeAboveAvg value by 1.
+
+     End loop
+
+     Multiply numberOfGradeAboveAvg by 100 and then divide the result by totalNumberOfGrades  to                                   percentOfGradeAboveAvg
+
+     Display totalNumberOfGrades, avg, percentOfGradeAboveAvg
+
+End
 
 """
 
