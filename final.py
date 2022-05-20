@@ -36,3 +36,35 @@ print message to user
 
 """
 
+
+def main():
+    # reading the file
+    file = open("Final.txt", "r")
+    # varibles to store the values
+    grades = []
+    # looping over file
+    for num in file:
+        grades.append(int(num))
+    # finding sum of grades and total number of grades
+    total = sum(grades)
+    totalNumberOfGrades = len(grades)
+    # finding the average
+    avg = total / totalNumberOfGrades
+    # finding numbe of grades abpver average
+    numberOfGradeAboveAvg = 0
+    for num in grades:
+        if num > avg:
+            numberOfGradeAboveAvg += 1
+    percentOfGardeAboveAvg = numberOfGradeAboveAvg*100 / totalNumberOfGrades
+    # printing the result
+    print("Number of grades:", totalNumberOfGrades)
+    print("\nAverage grade:", avg)
+    print(f"\nPercentage of grades above average: {round(percentOfGardeAboveAvg,2)}%")
+
+# method invocation
+main()
+
+
+
+
+
